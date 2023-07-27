@@ -16,7 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script>
     tailwind.config = {
@@ -33,8 +35,16 @@
   <style>
     .font-lato {
       font-family: 'Lato', sans-serif;
+
+      
     }
+   
+
+
+
+    
   </style>
+
 
 
 
@@ -42,9 +52,9 @@
 
 <!-- body start from here  -->
 
-<body class="font-lato">
+<body class="font-lato ">
 
-  <header class=" container px-6 lg: mx-auto lg:mt-10 ">
+  <header class=" overflow-hidden container px-6 lg: mx-auto lg:mt-10 ">
     <!-- this is navbar  -->
 
     <nav class=" lg:bg-[#F85559] rounded-[500px]">
@@ -67,20 +77,20 @@
         <div class="flex justify-between flex-1 relative">
 
           <div class="lg:ml-10">
-            <div class="flex justify-between">
+            <div class="flex lg:flex-row justify-between flex-1 items-center left-32">
               <div class=" flex items-center lg:flex   lg:items-center lg:justify-center  gap-2">
                 <img class="w-[35px]" src="./images/logo.png" alt="">
                 <h3 class="lg:text-white lg:font-bold lg:text-3xl">Fruit Burst</h3>
               </div>
 
-              <div class="dropdown flex-1  absolute -right-48 md:-right-64">
+              <div class="dropdown flex-1  relative left-36 sm:left-96 ">
                 <label tabindex="0" class="btn btn-ghost  lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                   </svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                <ul tabindex="0" class="menu absolute top-11 left-[-150%] menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
                   <li><a>Home </a></li>
 
                   <li><a>About</a></li>
@@ -92,20 +102,7 @@
               </div>
 
 
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
 
 
           </div>
@@ -116,7 +113,8 @@
         <div class="flex-1  relative  ">
           <!-- this is src -->
           <div class=" absolute left-20 -bottom-14 opacity-0 lg:opacity-100  navbar-end -mr-80 lg:block  ">
-            <input type="text" placeholder="Search here  " class="input px-12 input-bordered w-24 md:w-auto rounded-[50px] " />
+            <input type="text" placeholder="Search here  "
+              class="input px-12 input-bordered w-24 md:w-auto rounded-[50px] " />
 
             <i class="fa-solid fa-magnifying-glass relative left-60 -top-9 "></i>
 
@@ -143,9 +141,9 @@
       <div class="">
 
         <div class="carousel ">
-          <div id="slide1" class="carousel-item relative w-full">
-            <div class="relative ">
-              <img src="./images/banner1.png " class="w-full opacity-90 bg-blend-darken bg-blend-overlay " />
+          <div id="slide1" class="carousel-item relative  w-full">
+            <div class="relative  ">
+              <img src="./images/banner1.png " class="w-full opacity-90   " />
 
               <div
                 class=" absolute top-4 left-5 sm:left-10 md:top-16 md:left-40  lg:top-20 lg:left-80 text-white text-center ">
@@ -162,7 +160,7 @@
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <div class="relative bg-blend-darken">
+            <div class="relative  bg-blend-darken">
               <img src="./images/banner2.png " class="w-full opacity-90  bg-blend-darken " />
 
               <div class=" absolute  top-4 left-5 md:top-16 md:left-40  lg:top-20 lg:left-80 text-white text-center ">
@@ -179,7 +177,7 @@
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <div class="relative bg-blend-darken">
+            <div class="relative  bg-blend-darken">
               <img src="./images/banner3.png " class="w-full " />
 
               <div class=" absolute  top-4 left-5 md:top-16 md:left-40  lg:top-20 lg:left-80 text-white text-center">
@@ -196,11 +194,11 @@
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <div class="relative bg-blend-darken">
+            <div class="relative  bg-blend-darken">
               <img src="./images/banner4.png " class="w-full " />
 
               <div class=" absolute  top-4 left-5 md:top-16 md:left-40  lg:top-20 lg:left-80 text-white text-center ">
-                <h3 class="text-xl md:text-2xl lg:text-6xl  font-bold">
+                <h3 class="text-xl md:text-2xl lg:text-6xl text-white  font-bold">
                   Exotic tastes at your <br> doorstep
                 </h3>
                 <p class="lg:text-xl font-semibold lg:my-6">We supply highly quality organic products</p>
@@ -501,13 +499,16 @@
     <!-- review section  -->
     <section class="container px-8 lg: mx-auto mt-12  lg:mt-32">
 
-      
-      <div class="w-full p-10 " style="background-image: url('./images/team.png');">
+
+      <div class="w-full p-10 overlay " style="background-image: url('./images/team.png');">
+        
+
 
         <div class="text-white text-center  pt-20">
           <h3 class=" text-2xl lg:text-4xl font-bold ">Meet the team section</h3>
           <p class="font-medium">
-            Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+            Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+            literature from 45 BC, making it over 2000 years old.
           </p>
 
         </div>
@@ -515,76 +516,76 @@
         <div>
           <!-- team member -->
           <div class="flex flex-col lg:flex-row justify-center   pt-24 gap-20">
-           <!--  -->
-           <div>
-             <div class="flex justify-center">
-               <img class="rounded-full" src="./images/member1.png" alt="">
-             </div>
-             <div>
-               <h4 class="text-white mt-8 text-2xl text-center font-semibold">Awlad Hossain</h4>
-               <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
-               <div class="flex justify-center  gap-4">
-                 <img src="./images/facebook 1.svg" alt="">
-                 <img src="./images/twitter (1) 1.svg" alt="">
-                 <img src="./images/linkedin 1.svg" alt="">
-               </div>
-             </div>
- 
-           </div>
- 
-           <!--  -->
-           <div>
-             <div class="flex justify-center">
-               <img class="rounded-full" src="./images/member2.png" alt="">
-             </div>
-             <div>
-               <h4 class="text-white mt-8 text-2xl text-center font-semibold">Safia Chowdhury</h4>
-               <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
-               <div class="flex justify-center  gap-4">
-                 <img src="./images/facebook 1.svg" alt="">
-                 <img src="./images/twitter (1) 1.svg" alt="">
-                 <img src="./images/linkedin 1.svg" alt="">
-               </div>
-             </div>
- 
-           </div>
- 
-           <!--  -->
- 
-           <div>
-             <div class="flex justify-center">
-               <img class="rounded-full" src="./images/member3.png" alt="">
-             </div>
-             <div>
-               <h4 class="text-white mt-8 text-2xl text-center font-semibold">Rokib Hossain</h4>
-               <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
-               <div class="flex justify-center  gap-4">
-                 <img src="./images/facebook 1.svg" alt="">
-                 <img src="./images/twitter (1) 1.svg" alt="">
-                 <img src="./images/linkedin 1.svg" alt="">
-               </div>
-             </div>
- 
-           </div>
-           <!--  -->
-           <div>
-             <div class="flex justify-center">
-               <img class="rounded-full" src="./images/member4.png" alt="">
-             </div>
-             <div>
-               <h4 class="text-white mt-8 text-2xl text-center font-semibold">Chaity</h4>
-               <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
-               <div class="flex justify-center  gap-4">
-                 <img src="./images/facebook 1.svg" alt="">
-                 <img src="./images/twitter (1) 1.svg" alt="">
-                 <img src="./images/linkedin 1.svg" alt="">
-               </div>
-             </div>
- 
-           </div>
- 
-         </div>
-       </div>
+            <!--  -->
+            <div>
+              <div class="flex justify-center">
+                <img class="rounded-full" src="./images/member1.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-white mt-8 text-2xl text-center font-semibold">Awlad Hossain</h4>
+                <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
+                <div class="flex justify-center  gap-4">
+                  <img src="./images/facebook 1.svg" alt="">
+                  <img src="./images/twitter (1) 1.svg" alt="">
+                  <img src="./images/linkedin 1.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <!--  -->
+            <div>
+              <div class="flex justify-center">
+                <img class="rounded-full" src="./images/member2.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-white mt-8 text-2xl text-center font-semibold">Safia Chowdhury</h4>
+                <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
+                <div class="flex justify-center  gap-4">
+                  <img src="./images/facebook 1.svg" alt="">
+                  <img src="./images/twitter (1) 1.svg" alt="">
+                  <img src="./images/linkedin 1.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <!--  -->
+
+            <div>
+              <div class="flex justify-center">
+                <img class="rounded-full" src="./images/member3.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-white mt-8 text-2xl text-center font-semibold">Rokib Hossain</h4>
+                <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
+                <div class="flex justify-center  gap-4">
+                  <img src="./images/facebook 1.svg" alt="">
+                  <img src="./images/twitter (1) 1.svg" alt="">
+                  <img src="./images/linkedin 1.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+            <!--  -->
+            <div>
+              <div class="flex justify-center">
+                <img class="rounded-full" src="./images/member4.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-white mt-8 text-2xl text-center font-semibold">Chaity</h4>
+                <p class="text-white font-medium my-3 text-center">Fruits Expert</p>
+                <div class="flex justify-center  gap-4">
+                  <img src="./images/facebook 1.svg" alt="">
+                  <img src="./images/twitter (1) 1.svg" alt="">
+                  <img src="./images/linkedin 1.svg" alt="">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
 
 
 
@@ -595,7 +596,7 @@
 
 
 
-      
+
 
 
     </section>
@@ -607,7 +608,8 @@
 
       <div class="text-center">
         <h4 class="text-4xl font-bold">Why Choose Us</h4>
-        <p class="font-bold text-[#6D6D6D] mt-6 mb-11">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        <p class="font-bold text-[#6D6D6D] mt-6 mb-11">Contrary to popular belief, is not simply random text. It has
+          roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
 
 
       </div>
@@ -621,17 +623,24 @@
             <div class="flex justify-center">
               <img src="./images/Ellipse 2 (1).svg" alt="">
             </div>
+            
             <div>
-             <div class=" text-center lg:text-left">
-              <h1 class="text-2xl   border-b-2 font-bold">
-                Dedicated Team
-              </h1>
-             </div>
-              
-                <p class=" text-[#6D6D6D] text-center lg:text-left  font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class=" text-center lg:text-left">
+                <h1 class="text-2xl  font-bold">
+                  Dedicated Team
+                </h1>
+
+                <div class="flex justify-center lg:justify-start">
+                  <hr class="border-2 bg-black  w-48 mt-4  ">
+                </div>
+                
+              </div>
+             
+
+              <p class=" text-[#6D6D6D] text-center lg:text-left  font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
@@ -641,16 +650,19 @@
               <img src="./images/Ellipse 2 (1).svg" alt="">
             </div>
             <div>
-             <div class="">
-              <h1 class="text-2xl text-center lg:text-left border-b-2 font-bold">
-                Gift Certificates
-              </h1>
-             </div>
-              
-                <p class=" text-[#6D6D6D] text-center lg:text-left font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class="">
+                <h1 class="text-2xl text-center lg:text-left  font-bold">
+                  Gift Certificates
+                </h1>
+              </div>
+              <div class="flex justify-center lg:justify-start">
+                <hr class="border-2 bg-black  w-48 mt-4  ">
+              </div>
+
+              <p class=" text-[#6D6D6D] text-center lg:text-left font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
@@ -660,16 +672,19 @@
               <img src="./images/Ellipse 2 (2).svg" alt="">
             </div>
             <div>
-             <div class="">
-              <h1 class="text-2xl text-center lg:text-left border-b-2 font-bold">
-                Fresh is Best
-              </h1>
-             </div>
-              
-                <p class=" text-[#6D6D6D] text-center lg:text-left font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class="">
+                <h1 class="text-2xl text-center lg:text-left  font-bold">
+                  Fresh is Best
+                </h1>
+              </div>
+              <div class="flex justify-center lg:justify-start">
+                <hr class="border-2 bg-black  w-48 mt-4  ">
+              </div>
+
+              <p class=" text-[#6D6D6D] text-center lg:text-left font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
@@ -680,7 +695,7 @@
         </div>
 
         <!-- div two  -->
-        <div class="flex justify-center">
+        <div class="flex order-first lg:order-none justify-center">
 
           <img src="./images/whychoose1.png" alt="">
 
@@ -692,21 +707,25 @@
 
 
           <div class="flex flex-col justify-center lg:flex-row lg:justify-end gap-3 lg:flex-row-reverse  ">
-            <div class="flex justify-center   ">
+            <div class="flex justify-center     ">
               <img src="./images/Ellipse 2 (1).svg" alt="">
+             
             </div>
             <div>
-             <div class="">
-              <h1 class="text-2xl text-center lg:text-end border-b-2 font-bold">
-                Integrated Supplier
-              </h1>
-             </div>
-             
-              
-                <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class="">
+                <h1 class="text-2xl text-center lg:text-end  font-bold">
+                  Integrated Supplier
+                </h1>
+              </div>
+              <div class="flex justify-center lg:justify-end">
+                <hr class="border-2 bg-black  w-48 mt-4  ">
+              </div>
+
+
+              <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
@@ -718,16 +737,19 @@
               <img src="./images/Ellipse 2 (1).svg" alt="">
             </div>
             <div>
-             <div class="">
-              <h1 class="text-2xl text-center lg:text-end border-b-2 font-bold">
-                Integrated Supplier
-              </h1>
-             </div>
-              
-                <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class="">
+                <h1 class="text-2xl text-center lg:text-end  font-bold">
+                  Integrated Supplier
+                </h1>
+              </div>
+              <div class="flex justify-center lg:justify-end">
+                <hr class="border-2 bg-black  w-48 mt-4  ">
+              </div>
+
+              <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
@@ -739,21 +761,24 @@
               <img src="./images/Ellipse 2 (1).svg" alt="">
             </div>
             <div>
-             <div class="">
-              <h1 class="text-2xl text-center lg:text-end border-b-2 font-bold">
-                Integrated Supplier
-              </h1>
-             </div>
-              
-                <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
-                  Professional employees are there for you to pick the most amazing and fresh fruits.
-                </p>
-              
+              <div class="">
+                <h1 class="text-2xl text-center lg:text-end  font-bold">
+                  Integrated Supplier
+                </h1>
+              </div>
+              <div class="flex justify-center lg:justify-end">
+                <hr class="border-2 bg-black  w-48 mt-4  ">
+              </div>
+
+              <p class=" text-center  lg:text-end text-[#6D6D6D] text-sm font-medium mt-3">
+                Professional employees are there for you to pick the most amazing and fresh fruits.
+              </p>
+
             </div>
 
           </div>
 
-          
+
 
 
         </div>
@@ -771,59 +796,51 @@
   </main>
 
   <!-- Footer section  -->
-  <footer class="max-w-7xl mx-auto mt-10 mb-28 px-10 pb-40 bg-[#121212]">
+  <footer class="footer footer-center p-10 bg-[#121212] text-base-content rounded">
+    <div class="flex justify-center items-center gap-3">
 
-    <div class="flex flex-col justify-center items-center gap-10">
-
-      <div class="flex justify-center items-center mt-20 gap-3">
-
-        <img src="./images/logo.png" alt="">
-        <h3 class="text-3xl text-white font-semibold">Fruit Burst</h3>
-
-      </div>
-
-
-          <!-- footer menu  -->
-
-      <div class="text-white">
-
-        <ul class="flex   lg:flex-row list-none gap-8 font-semibold">
-          <li>Home</li>
-          <li>About</li>
-          <li>Shop</li>
-          <li>All Fruits</li>
-          <li>Support</li>
-          <li>My Account</li>
-          
-        </ul>
-
-      </div>
-
-      <!-- social icons  -->
-
-
-
-      <div class="flex gap-10 text-white">
-
-        <i class="fa-brands fa-youtube text-3xl"></i>
-        <i class="fa-brands fa-facebook text-3xl"></i>
-        <i class="fa-brands fa-square-twitter text-3xl"></i>
-        <i class="fa-brands fa-instagram text-3xl"></i>
-        <i class="fa-brands fa-linkedin text-3xl"></i>
-        <i class="fa-brands fa-apple text-3xl"></i>
-
-        
-
-
-
-      </div>
+      <img src="./images/logo.png" alt="">
+      <h3 class="text-3xl font-semibold text-white">Fruit Burst</h3>
 
 
     </div>
 
-    
 
+
+    <div class="grid grid-cols-4 lg:grid-flow-col gap-4 text-white">
+      <a class="link link-hover text-white">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Support</a>
+      <a class="link link-hover">Shop</a>
+      <a class="link link-hover   ">All Fruits</a>
+      <a class="link link-hover  ">My Account</a>
+    </div>
+    <div>
+      <div class="">
+        
+      </div>
+    </div>
+    <div class="grid grid-flow-col gap-8 text-white">
+
+      <i class="fa-brands fa-youtube text-3xl"></i>
+      <i class="fa-brands fa-facebook text-3xl"></i>
+      <i class="fa-brands fa-square-twitter text-3xl"></i>
+      <i class="fa-brands fa-instagram text-3xl"></i>
+      <i class="fa-brands fa-linkedin text-3xl"></i>
+      <i class="fa-brands fa-apple text-3xl"></i>
+
+
+
+
+
+    </div>
   </footer>
+
+
+
+
+
+  
 
 </body>
 
